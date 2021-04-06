@@ -1,0 +1,44 @@
+.first__ilne {
+  display: flex;
+  align-items: center;
+}
+
+.first__profile {
+  background-color: var(--navy);
+  /* 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.first__profile h2 {
+  margin-top: 0;
+}
+
+.first__profile h3 {
+  margin-bottom: 0;
+}
+
+.first__profile img {
+  width: 35%;
+  height: 35%;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0 30px 30px 30px;
+}
+
+.first__profile_div {
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.first__profile_div span {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  margin-top: 5px;
+}

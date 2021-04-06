@@ -1,0 +1,12 @@
+.last__ilne {
+  margin-left: 50px;
+}
+
+.last__ilne h3 {
+  color: var(--navy);
+}
+
+.second__profile span {
+  display: block flex;
+  align-items: center;
+}
