@@ -19,3 +19,14 @@ a {
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 500px) {
+  body {
+    display: block;
+  }
+
+  .last__ilne {
+    margin-left: 20px;
+    font-size: small;
+  }
+}
