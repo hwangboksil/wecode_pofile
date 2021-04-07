@@ -1,5 +1,4 @@
 # Specification
----
 >wecode | 사전 스터디 1주차 과제
 
 ### Requirements :
