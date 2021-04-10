@@ -2,25 +2,34 @@
 @import "left.css";
 @import "right.css";
 
-body {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 35% 1fr;
-  margin: 0;
+/* CSS Reset zone */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+dl,
+dd {
+  margin: 0; /* web에서 제공하는 기본 레이아웃 삭제 */
   padding: 0;
-  height: 100vh;
 }
 
-div {
-  width: 100%;
+h1,
+h2,
+h3 {
+  font-size: 100%; /* defaultVlue */
+  font-weight: normal;
 }
+/* CSS Reset zone */
 
 a {
   color: white;
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 768px) {
   body {
     display: block;
   }
@@ -29,4 +38,4 @@ a {
     margin-left: 20px;
     font-size: small;
   }
-}
+} */
