@@ -23,6 +23,10 @@ h3 {
 }
 /* CSS Reset zone */
 
+body {
+  background-color: var(--navy);
+}
+
 a {
   color: white;
   text-decoration: none;
