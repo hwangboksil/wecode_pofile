@@ -37,13 +37,36 @@ li {
   list-style-type: none; /* bullet-delete */
 }
 
-/* @media (max-width: 768px) {
-  body {
-    display: block;
+@media (min-width: 768px) {
+  /* 최소사이즈 */
+  .first__profile {
+    position: fixed;
+    left: 0;
+    width: 50vw; /* view port 기준에서 50%의 너비를 받아와라 */
+    height: 100vh;
+    padding: 15% 0;
+    /* border: 1px solid red; */
   }
-
-  .last__ilne {
-    margin-left: 20px;
-    font-size: small;
+  .secon__profile {
+    margin-left: 50vw;
+    padding-top: 50px;
+    /* border: 1px solid red; */
   }
-} */
+  .timeline {
+    margin: 0 -10px; /* 좌우 마진을 부여하면 커지는 느낌이 난다 */
+    /* border: 1px solid red; */
+  }
+  .timeline li {
+    width: 50%;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+  .timeline li:nth-child(even) {
+    /* 반대편 */
+    margin-left: auto; /* 빈공간 알아서 정렬됨*/
+    margin-top: -150px;
+    margin-bottom: -150px;
+    /* border: 1px solid red; */
+  }
+}
