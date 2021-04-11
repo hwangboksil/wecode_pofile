@@ -22,17 +22,12 @@
 }
 
 .first__profile h1 {
-  font-size: 2.5em;
-  /* border: 1px solid red; */
-}
-
-.first__profile h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   /* border: 1px solid red; */
 }
 
 .job {
-  font-size: 40px;
+  font-size: 1em;
   line-height: 1.5; /* .name의 line 별 높이, 이 값이 변경되면 자식의 'em'값도 변경되어야함.(font-size*value:단위없음) : .name-job에서 필요함 */
   font-style: italic;
   font-family: var(--titeFont);
@@ -41,8 +36,8 @@
   background-color: var(
     --navy
   ); /* position: sticky; 사용시 해당태그의 뒷배경을 만들어줘야 다른 내용이 안보인다.*/
-  box-shadow: 0 0 50px 10px var(--navy);
-  height: 1.5em;
+  box-shadow: 0 0 25px 5px var(--navy);
+  height: 2em;
   overflow: hidden; /* overflow를 설정하면 30px만큼만 보여진다 */
   position: relative; /* relative를 지정하면 지정된 태그(.name-job)이 자식태그에 기본 값이 된다. ::after 볼 것 */
   /* border: 1px solid red; */
@@ -69,9 +64,9 @@
 }
 
 .pic a {
-  background-image: url("../img/profilepics.png");
-  width: 421px;
-  height: 421px;
+  background-image: url("../img/profilepics2.png");
+  width: 200px;
+  height: 200px;
   display: inline-block;
   text-indent: -9999px;
   /* border: 1px solid red; */
@@ -92,6 +87,7 @@
   height: 32px;
   display: inline-block; /* 가로로 배치되게 만듦*/
   text-indent: -9999px; /* 안에 포함된 텍스트 삭제 */
+  margin-top: 30px;
   margin-right: 10px;
   /* border: 1px solid red; */
 }

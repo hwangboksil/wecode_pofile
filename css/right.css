@@ -1,9 +1,9 @@
 .profile__section {
-  margin: 0 50px;
+  margin: 0 30px;
 }
 
 .profile__section h2 {
-  font-size: 1.5em;
+  font-size: 1em;
   border-top: 3px solid;
   color: var(--titleColor);
   margin-bottom: 20px;
@@ -26,7 +26,7 @@
 .timeline li h3 {
   color: orange;
   float: left; /* <p>태그를 h3 옆에 붙여줌 : 원하는 위치로 이동*/
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.2em; /* 글자 사이간격 */
   padding-top: 0.2em;
   margin-right: 0.5em;
