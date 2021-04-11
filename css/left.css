@@ -1,27 +1,81 @@
+/* Ainimation */
+@keyframes rolling {
+  0% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(-25%);
+  }
+  70% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-75%); /* .name의 line-heigt 값에 배수 */
+  }
+}
+
 .first__profile {
   text-align: center;
   background-color: var(--navy);
   color: white;
-  border: 1px solid red;
+  padding-top: 20px;
+  /* border: 1px solid red; */
 }
 
-.first__profile h2 {
-  font-size: 2em;
+.first__profile h1 {
+  font-size: 2.5em;
+  /* border: 1px solid red; */
 }
 
 .first__profile h3 {
-  font-size: 1.5em;
+  font-size: 2em;
+  /* border: 1px solid red; */
+}
+
+.job {
+  font-size: 40px;
+  line-height: 1.5; /* .name의 line 별 높이, 이 값이 변경되면 자식의 'em'값도 변경되어야함.(font-size*value:단위없음) : .name-job에서 필요함 */
+  font-style: italic;
+  font-family: var(--titeFont);
+  /* border: 1px solid red; / position: sticky; 작업시 박스 라인을 만들고 코딩하면 더 효율적으로 생성가능 */
+  position: sticky; /* -webkit-(사파리등 사이트에서 적용시킬때 적어준다) / 해당 태크 스크롤 시 태그의 범위가 끝나는 부분까지 상단 고정됨 */
+  background-color: var(
+    --navy
+  ); /* position: sticky; 사용시 해당태그의 뒷배경을 만들어줘야 다른 내용이 안보인다.*/
+  box-shadow: 0 0 50px 10px var(--navy);
+  height: 1.5em;
+  overflow: hidden; /* overflow를 설정하면 30px만큼만 보여진다 */
+  position: relative; /* relative를 지정하면 지정된 태그(.name-job)이 자식태그에 기본 값이 된다. ::after 볼 것 */
+  /* border: 1px solid red; */
+}
+
+.job::after {
+  /* .name-job의 뒤에 가상 요소 작성 */
+  content: " ";
+  position: absolute; /* absolute는 기본값이 전체창을 기준으로 하기때문에 부모태그(.name-job)의 포지션을 relative로 설정해준다 */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: -1em;
+  box-shadow: inset 0 0 10px 10px var(--navy); /* (순서대로) inset:안쪽그림자 x좌표 y좌표 블러:흐림 강도 스프리드:진하기 색상 */
+}
+
+.job-list {
+  /* margin-top: -1.5em; .name에서 설정한 라인의 높이에 맞춰 이동가능 : Animation 기능을 위해 삭제 */
+  animation: rolling; /* 상단에 위치한 Animation 적용*/
+  animation-duration: 5s; /* Animation time */
+  animation-iteration-count: infinite; /* 새로고침없이 무한 재생 */
+  animation-direction: reverse; /* 방향 반대 */
 }
 
 .pic a {
   background-image: url("../img/profilepics.png");
-  padding-top: -50px;
   width: 421px;
   height: 421px;
   display: inline-block;
   text-indent: -9999px;
   /* border: 1px solid red; */
-  border-radius: 15%;
 }
 
 .pic a:hover {
@@ -29,17 +83,18 @@
 }
 
 .icons {
-  margin: 30px 0; /*상하 좌우 */
-  border: 1px solid red;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
 }
 
 .icons a {
   background-image: url("../img/icons.png");
   width: 32px;
   height: 32px;
-  display: inline; /* 가로로 배치되게 만듦*/
+  display: inline-block; /* 가로로 배치되게 만듦*/
   text-indent: -9999px; /* 안에 포함된 텍스트 삭제 */
-  background-repeat: no-repeat; /* 반복하지 않음 */
+  margin-right: 10px;
+  /* border: 1px solid red; */
 }
 
 /* 아이콘 위치 잡아주기 */
