@@ -25,11 +25,16 @@ h3 {
 
 body {
   background-color: var(--navy);
+  height: 500vh;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+li {
+  list-style-type: none; /* bullet-delete */
 }
 
 /* @media (max-width: 768px) {

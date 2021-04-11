@@ -1,17 +1,39 @@
-.last__ilne {
-  margin-left: 50px;
+.profile__section {
+  margin: 0 50px;
 }
 
-.last__ilne h3 {
-  color: var(--navy);
+.profile__section h2 {
+  font-size: 1.5em;
+  border-top: 3px solid;
+  color: var(--titleColor);
+  margin-bottom: 20px;
+  padding: 0.5em 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--navy);
+  box-shadow: 0 0 50px 10px var(--navy);
 }
 
-.second__profile span {
-  display: block flex;
-  align-items: center;
+.timeline {
+  font-size: 1rem;
+  color: #666;
 }
 
-.third__profile span,
-.fifth__profile span {
-  margin: 30px;
+.timeline li {
+  padding-bottom: 30px;
+}
+
+.timeline li h3 {
+  color: orange;
+  float: left; /* <p>태그를 h3 옆에 붙여줌 : 원하는 위치로 이동*/
+  font-size: 1rem;
+  letter-spacing: 0.2em; /* 글자 사이간격 */
+  padding-top: 0.2em;
+  margin-right: 0.5em;
+  border-top: 2px solid;
+}
+
+.timeline li:last-child {
+  /* ul의 마지막 li를 선택함 */
+  padding-bottom: 50px;
 }
