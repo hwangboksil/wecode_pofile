@@ -60,16 +60,9 @@ li {
     /* border: 1px solid red; */
   }
   .timeline li {
-    width: 50%;
-    padding: 100px 20px;
+    width: 100%;
+    margin-left: 10px;
     box-sizing: border-box;
-    /* border: 1px solid red; */
-  }
-  .timeline li:nth-child(even) {
-    /* 반대편 */
-    margin-left: auto; /* 빈공간 알아서 정렬됨*/
-    margin-top: -150px;
-    margin-bottom: -150px;
     /* border: 1px solid red; */
   }
 }
